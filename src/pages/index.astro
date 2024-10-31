@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
+import GitHubIcon from "../components/icons/GitHubIcon.astro";
+import MailIcon from "../components/icons/MailIcon.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import AptitudeIcon from "../components/icons/AptitudeIcon.astro";
+import AttitudeIcon from "../components/icons/AttitudeIcon.astro";
+import TrainingIcon from "../components/icons/TrainingIcon.astro";
+import DownloadIcon from "../components/icons/DownloadIcon.astro";
+import Badge from "../components/Badge.astro";
+---
+
+<Layout title='Jesús Paladinez | Portafolio'>
+  <main class='px-14'>
+    <SectionContainer id='start' class='flex flex-col mt-10 mb-28'>
+      <div class='flex flex-wrap-reverse gap-x-14'>
+        <div class='flex flex-col justify-center h-full mb-10'>
+          <h1
+            class='text-white text-3xl md:text-4xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-5'
+          >
+            ¡Hola, soy Jesús Paladinez!
+          </h1>
+          <div class='flex flex-wrap w-full gap-5'>
+            <h2 class='text-xl opacity-80 text-wrap'>
+              Desarrollador de Software
+            </h2>
+            <a
+              href='https://www.linkedin.com/in/jesuspaladinez/'
+              target='_blank'
+              rel='noopener'
+            >
+              <Badge>Disponible para trabajar</Badge>
+            </a>
+          </div>
+        </div>
+        <div class=''>
+          <img
+            class='rounded-full size-40'
+            src='/public/images/selfieSeria.png'
+            alt='photo'
+          />
+        </div>
+      </div>
+      <nav class='flex gap-4 flex-wrap mt-12'>
+        <SocialPill href='https://www.linkedin.com/in/jesuspaladinez/'>
+          <LinkedInIcon class='size-4 md:size-6' />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href='https://github.com/JesusPaladinez'>
+          <GitHubIcon class='size-4 md:size-6' />
+          GitHub
+        </SocialPill>
+        <SocialPill onclick="window.open('mailto:jesuspaladinez18@gmail.com')">
+          <MailIcon class='size-4 md:size-6' />
+          jesuspaladinez18@gmail.com
+        </SocialPill>
+        <SocialPill
+          href='/Hoja de Vida - Jesús Paladinez.pdf'
+          download='Hoja de Vida - Jesús Paladinez'
+        >
+          <DownloadIcon class='size-4 md:size-6' />
+          Hoja de Vida
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id='training' class='pb-12 flex flex-wrap'>
+      <TrainingIcon class='mr-2 mt-1 w-6' />
+      <h2 class='text-2xl font-semibold mb-4 w-1/2'>Formación</h2>
+      <p class='w-full text-pretty'>
+        Me gradué como bachiller en el año 2021 en el Instituto Técnico
+        Industrial de Popayán. Cuento con 3 semestres de Ingeniería de Sistemas
+        en la Unicomfacuca, actualmente estoy cursando un tecnólogo en Análisis
+        y Desarrollo de Software en el SENA, que inició el 23 de enero de 2023 y
+        finalizará el 22 de abril de 2025. <br /><br />
+
+        He liderado un proyecto de Inteligencia Artificial enfocado en reforzar
+        la seguridad tanto en aplicaciones web y móviles, como en
+        infraestructuras que lo requieran, implementando un sistema de
+        reconocimiento facial.
+      </p>
+    </SectionContainer>
+
+    <SectionContainer id='skills' class='pb-12 flex flex-wrap'>
+      <AptitudeIcon class='mr-2 mt-0.5 w-6' />
+      <h2 class='text-2xl font-semibold mb-4 w-1/2'>Aptitudes</h2>
+      <p class='w-full text-pretty'>
+        Durante mi formación en el SENA y en la Universidad, adquirí
+        conocimientos en tecnologías como el lenguaje de hipertexto HTML, el
+        lenguaje de diseño gráfico CSS, lenguajes de programación como JAVA,
+        JavaScript, Python, PHP, Dart, frameworks como React Js, Express - Node
+        Js, Bootstrap, TailwindCSS, Django, Flutter, gestión en bases de datos
+        relacionales como MySQL, no relacionales como MongoDB, almacenamiento en
+        la nube como Firebase, alojamiento y despliegue de aplicaciones en
+        plataformas como Vercel, Render y Railway, control de versiones como
+        Git, colaboración y alojamiento de proyectos como Git Hub.
+      </p>
+    </SectionContainer>
+
+    <SectionContainer id='attitudes' class='pb-12 flex flex-wrap'>
+      <AttitudeIcon class='mr-2 mt-0.5 w-6' />
+      <h2 class='text-2xl font-semibold mb-4 w-1/2'>Actitudes</h2>
+      <p class='w-full text-pretty'>
+        Me destaco por el buen trabajo en equipo, la rápida toma de decisiones y
+        el buen manejo de presión. Soy una persona proactiva, organizada,
+        responsable, con excelentes relaciones interpersonales y con una muy
+        buena disposición para trabajar y seguir aprendiendo.
+      </p>
+    </SectionContainer>
+  </main>
+</Layout>

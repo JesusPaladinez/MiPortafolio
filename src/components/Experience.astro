@@ -1,0 +1,34 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+  {
+    date: "Febrero 2022",
+    title: "Aplicación UI con Tailwind CSS",
+    description: "Página con estilos CSS utilizando el framework Tailwind",
+    link: "#",
+  },
+  {
+    date: "Febrero 2022",
+    title: "Aplicación UI con Tailwind CSS",
+    description: "Página con estilos CSS utilizando el framework Tailwind",
+    link: "#",
+  },
+  {
+    date: "Febrero 2022",
+    title: "Aplicación UI con Tailwind CSS",
+    description: "Página con estilos CSS utilizando el framework Tailwind",
+    link: "#",
+  },
+];
+---
+
+<ol class='relative border-s border-gray-200 dark:border-gray-700'>
+  {
+    EXPERIENCE.map((experience) => (
+      <li class='mb-10 ms-4'>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }  
+</ol>

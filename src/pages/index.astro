@@ -10,6 +10,7 @@ import AttitudeIcon from "../components/icons/AttitudeIcon.astro";
 import TrainingIcon from "../components/icons/TrainingIcon.astro";
 import DownloadIcon from "../components/icons/DownloadIcon.astro";
 import Badge from "../components/Badge.astro";
+import ImgProfile from "../assets/img/selfieSeria.png";
 ---
 
 <Layout title='Jesús Paladinez | Portafolio'>
@@ -36,11 +37,7 @@ import Badge from "../components/Badge.astro";
           </div>
         </div>
         <div class=''>
-          <img
-            class='rounded-full size-40'
-            src='/public/images/selfieSeria.png'
-            alt='photo'
-          />
+          <img class='rounded-full size-40' src={ImgProfile.src} alt='photo' />
         </div>
       </div>
       <nav class='flex gap-4 flex-wrap mt-12'>
